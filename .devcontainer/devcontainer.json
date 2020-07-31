@@ -1,0 +1,27 @@
+{
+	"name": "Hello DevContainer",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"args": { 
+		}
+	},
+
+	"settings": {
+		"terminal.integrated.shell.linux": "/bin/bash"
+	},
+
+	"extensions": [
+		"ms-dotnettools.csharp"
+	],
+
+	"forwardPorts": [5000, 5001],
+
+	"mounts": [
+	],
+	"remoteEnv": {
+	},
+
+	"postCreateCommand": "dotnet restore",
+
+	"remoteUser": "vscode"
+}
