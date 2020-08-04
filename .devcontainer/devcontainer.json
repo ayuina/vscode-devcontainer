@@ -17,6 +17,7 @@
 	"forwardPorts": [5000, 5001],
 
 	"mounts": [
+		"source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
 	],
 	"remoteEnv": {
 	},
